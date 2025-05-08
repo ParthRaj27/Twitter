@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/assets/css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update tweet</title>
+</head>
+  <body>
+    <div class="wrapper">
+      <h2>Update Tweet</h2>
+      <form id="updatetweet">
+        <div class="input-box">
+          <input type="text" value="<%= data[0].tweet_id %>" name="id" hidden>
+          <input type="text" name="title" value="<%= data[0].Tweet_title %>">
+        </div>
+        <div class="input-box">
+          <input type="text" name="content" value="<%= data[0].Tweet_content %>">
+        </div>
+        <div class="input-box button">
+          <input type="Submit" value="update">
+        </div>
+        <div class="text">
+          <h3>Don't want to update? <a href="/application/viewtweets">view tweets</a></h3>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="/assets/script/updatetweet.script.js"></script>
+</html>

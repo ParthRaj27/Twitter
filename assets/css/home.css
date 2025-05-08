@@ -1,0 +1,446 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.buttons {
+    margin-left: 10px;
+    height: 30px;
+    /* width: 290px; */
+    background-color: #333;
+    color: white;
+    border: 1px solid white
+}
+
+.buttons:hover {
+    background-color: white;
+    color: #333;
+}
+
+.followbutton {
+    margin-left: 45px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    height: 30px;
+    width: 100px;
+    background-color: #333;
+    color: white
+}
+
+.followbutton:hover {
+    background-color: white;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: black;
+    color: black;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.username {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    width: 200px;
+    border: 5px solid white;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.tweetform {
+    margin-bottom: 20px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 240px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.card {
+    border-style: solid;
+    margin-bottom: 50px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100%-250px);
+}
+
+.tweetit {
+    border: 1px solid white;
+    height: 22px;
+    width: 70px;
+    background-color: #333;
+    color: white
+}
+
+.tweetit:hover {
+    background-color: white;
+    color: #333;
+}
+
+#feed .card:hover {
+  transition: 0.3s ease-in-out ;
+  scale: 1.05;
+}
+
+.sidebar .card:hover {
+    scale: 1.05;
+}
+
+#containertweet {
+    margin-left: 60px;
+}
+
+.top {
+    margin-left: 60px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+input {
+    height: 25px;
+}
+
+form label {
+    height: 30px;
+}
+
+.sendbtn {
+    height: 35px;
+    width: 150px;
+    font-family: inherit;
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.sendbtn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.sendbtn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sendbtn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.sendbtn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.sendbtn:hover span {
+    transform: translateX(5em);
+}
+
+.sendbtn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.retweetform {
+    display: flex;
+}
+
+.retweetform input {
+    margin-right: 10px;
+}
+
+.retweetform .retweet {
+    padding: 12px;
+}
+.globalbutton {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000000;
+    transition: all 0.2s ease;
+  }
+  
+  .globalbutton:active {
+    transform: scale(0.96);
+  }
+  
+  .globalbutton:before,
+  .globalbutton:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  .globalbutton:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  .globalbutton:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #ffffff 20%, transparent 20%),
+      radial-gradient(circle, #ffffff 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #ffffff 15%, transparent 20%),
+      radial-gradient(circle, #ffffff 20%, transparent 20%),
+      radial-gradient(circle, #ffffff 20%, transparent 20%),
+      radial-gradient(circle, #ffffff 20%, transparent 20%),
+      radial-gradient(circle, #ffffff 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+
+.button {
+    margin-left: 10px;
+    height: 40px;
+    width: 210px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: black;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: var(--clr);
+}
+
+.button:hover .button__icon-wrapper {
+  color: var(--clr);
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+
+
+.likedislikebutton {
+    margin-left: 20px;
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+  }
+  
+  .likedislikebutton span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  .likedislikebutton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .likedislikebutton:hover {
+    color: #fff;
+  }
+  
+  .likedislikebutton:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }

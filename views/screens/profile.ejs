@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/css/model.css">
+    <link rel="stylesheet" href="/assets/css/profile.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= result.email %></title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <div class="card">
+      <h3><%= result.fname %> <%= result.lname %></h3>
+      <p class="title">user name : <%= result.email %></p>
+      <p>contact : <%= result.Phone_number %></p>
+      <button value="<%= result.created_at %>" class="btn" id="activefrom">Active from : <span id="set"></span></button>
+      <p>Time Zone : <span id="timezone"></span></p>
+      <p><a href="/application/home"><button class="profilebutton">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">Home</span>
+      </button></a></p>
+      <button class="profilebutton" id="myBtn">
+        <span class="transition"></span>
+        <span class="gradient"></span>
+        <span class="label">Update profile</span>
+      </button>
+      
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Update profile</h2>
+        <form id="myForm">
+          <div class="input-box">
+            <input type="text" name="fname" value=<%= result.fname %>  placeholder="Enter your first name" required>
+          </div>
+          <div class="input-box">
+            <input type="text" name="lname" value=<%= result.lname %> placeholder="Enter your last name" required>
+          </div>
+          <div class="input-box">
+            <input type="text" name="email" value=<%= result.email  %> placeholder="Enter your email" readonly>
+          </div>
+          <div class="input-box">
+            <input type="text" name="phonenumber" value=<%= result.Phone_number  %> placeholder="Enter your phonenumber" required>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Update Profile">
+          </div>
+        </form>
+      </div>
+    
+    </div>
+  </body>
+  <script src="/assets/script/profile.script.js"></script>
+</html>

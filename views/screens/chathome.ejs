@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/css/chathome.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter - Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <span id="currentuser" hidden></span>
+      <div class="sidebar">
+        <h2 id="loggedinuser"><%= user %></h2>
+        <ul class="user-list" id="users"></ul>
+      </div>
+      <div class="chat-area">
+        <div class="chat-header">
+          <h2>
+            Chat with <span id="active-user"></span><span id="typing"></span>
+          </h2>
+          <button class="btn"><a href="/application/home" rel="noopener noreferrer">Home</a></button>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+          <input
+            type="text"
+            placeholder="Type a message..."
+            id="message-input"
+          />
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/script/chathome.script.js"></script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/css/viewuser.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Users</title>
+</head>
+<body>
+    <span>username : <span id="username"><%= email %> </span></span>
+    <div class="div">
+    <% result.forEach(result => { %>
+    <div class="card">
+        <img src="img_avatar.png" alt="user" style="width:100%">
+        <div class="container">
+          <h4><b><%= result.email %></b></h4> 
+          <p><%= result.fname %></p>
+          <button  value=<%= result.id %> onclick="follow(this.value)">follow</button>
+        </div>
+      </div> 
+      <% }) %>
+    </div>
+    <a href="/application/home"><button>home</button></a>
+</body>
+<script src="/assets/script/viewuser.script.js"></script>
+</html>

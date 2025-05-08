@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="/assets/css/tweetviews.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your tweets</title>
+</head>
+
+<body>
+    <a href="/application/profile">
+        <p class="username">username : </span>
+  
+          <span id="username">
+            <%= email %>
+        </p>
+      </a>
+    <table border="1px">
+        <tr>
+            <th>tweet title</th>
+            <th>tweet content</th>
+            <th>posted at</th>
+            <th>Delete</th>
+            <th>update</th>
+        </tr>
+        <tbody id="tbody">
+            <% result.forEach(result => { %>
+                <tr>
+             <td><%= result.Tweet_title %></td>
+             <td><%= result.Tweet_content %></td>
+             <td><%= result.created_at %></td>
+             <td><button value=<%= result.tweet_id %> onclick="deletetweet(this.value)">Delete</button></td>
+             <td><a href="/application/update/<%= result.tweet_id %>"><button value= >update</button></td></a>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <a href="/application/home"><button class="home">Home</button></a>
+</body>
+<script src="/assets/script/tweetviews.script.js"></script>
+
+</html>

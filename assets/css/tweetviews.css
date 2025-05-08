@@ -1,0 +1,40 @@
+.username {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+body{
+    background-color: black;
+    color: white;
+}
+table {
+    margin-top: 100px;
+}
+
+button {
+    background-color: burlywood;
+    color: black;
+    border: 1px solid black;
+}
+
+.home {
+    margin-left: 600px;
+    margin-top: 50px;
+    height: 30px;
+    width: 70px;
+}
+
+button:hover {
+    background-color: black;
+    color: burlywood;
+}
+
+.home:hover {
+    background-color: black;
+    color: burlywood;
+}

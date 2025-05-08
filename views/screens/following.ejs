@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="/assets/css/following.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following</title>
+</head>
+<body>
+  <a href="/application/profile">
+    <p class="username">username : </span>
+
+      <span id="username">
+        <%= email %>
+    </p>
+  </a>
+    <% result.forEach(result => { %>
+    <div class="card">
+      <h4 id="userid"><b><%= result.user_name %></b></h4> 
+      <p class="title"><%= result.status %></p>
+      <p><%= result.followed_at %></p>
+      <button  value=<%= result.user_id %> onclick="unfollow(this.value)">unfollow</button>
+    </div><% }) %>
+    <div class="div">
+    <a href="/application/home"><button class="btn">home</button></a>
+</body>
+<script src="/assets/script/following.script.js"></script>
+</html>

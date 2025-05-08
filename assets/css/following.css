@@ -1,0 +1,59 @@
+
+.card {
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  /* margin-top: 220px; */
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.btn{
+  margin-top: 20px;
+  margin-left: 560px;
+}
+button {
+  margin-bottom: 10px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #854836;
+  text-align: center;
+  cursor: pointer;
+  /* width: 100%; */
+  width: 150px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+  background-color: black;
+}
+.username {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #444;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
