@@ -7,3 +7,4 @@ step - 2 : config .env using .env.local file
 step - 3 : start server
 nodemon index.js
 
+just easy thing like writing 1234
