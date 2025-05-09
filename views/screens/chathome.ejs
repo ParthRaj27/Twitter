@@ -18,9 +18,13 @@
           <h2>
             Chat with <span id="active-user"></span><span id="typing"></span>
           </h2>
-          <button class="btn"><a href="/application/home" rel="noopener noreferrer">Home</a></button>
+          <button class="btn">
+            <a href="/application/home" rel="noopener noreferrer">Home</a>
+          </button>
         </div>
-        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-messages" id="chat-messages">
+          <h1 style="margin-top: 30vh; margin-left: 60vb;">select user to chat</h1>
+        </div>
         <div class="chat-input">
           <input
             type="text"
@@ -31,6 +35,9 @@
         </div>
       </div>
     </div>
+    <div id="myModal" class="modal"><div class="modal-content" >
+      <form id="updatedform"><span id="modal-content"></span> <button type="submit" class="btn">submit</button></form>
+    </div></div>
   </body>
   <script src="/socket.io/socket.io.js"></script>
   <script src="/assets/script/chathome.script.js"></script>
